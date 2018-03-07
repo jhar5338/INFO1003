@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>BuzzFood</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+      #map-canvas { height: 100px; height:400px; margin: 0; padding: 0;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyBdyKRQ35EZ4qLPecs8GzhAgJv9ByqVO3M">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: -34.397, lng: 150.644},
+          zoom: 8
+        };
+          
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      var styles = [
+  {
+    stylers: [
+      { hue: "#9575cd" },
+      { saturation: -20 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 100 },
+      { visibility: "simplified" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels",
+    stylers: [
+      { visibility: "off" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+      
+      }
+        
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+    </head>
+
+<body class="grey lighten-4">
+     <div class="navbar-fixed">
+        <nav class="deep-purple lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" class="brand-logo" href="index.html">
+                    BuzzFood</a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="waves-effect"><a href="index.html">Home</a>
+                    </li>
+                    <li class="waves-effect"><a href="eatin.html">Eat In</a>
+                    </li>
+                    <li class="active waves-effect"><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li class="waves-effect"><a href="facts.html">The Facts</a>
+                    </li>
+                    <li class="waves-effect"><a href="tools.html">Tools</a>
+                    </li>
+                    <li class="waves-effect"><a href="play.html">Play</a>
+                    </li>
+                    <li class=" "><a href="#">&nbsp;</a>
+                        <li>
+                            <a data-target="login" class="waves-effect deep-purple lighten-2 btn modal-trigger">Login</a>
+                        </li>
+                    
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li>i<a href="eatin.html">Eat In</a>
+                    </li>
+                    <li><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li><a href="facts.html">The Facts</a>
+                    </li>
+                    <li><a href="tools.html">Tools</a>
+                    </li>
+                    <li><a href="play.html">Play</a>
+                    </li>
+                    <li></li>
+                </ul>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+
+        </nav>
+    </div>
+      <a href="index.html" class="waves-effect deep-purple lighten-2 btn2 left-align"> <div class="container"><d id="customfont1" class="left-align">Home > Eat Out</d></div></a>
+    <div class="container">
+        <div class="row">
+            <br>
+                   <div class="hide-on-small-only welcome col s12 m12">
+
+
+
+
+                <div class="card">
+                    <div class="card-content center-align">
+                        <h5 class="deep-purple-text">Where for art thou affordable takeout place? <br><h5 class="grey-text text-darken-3">Use our restaurant locator to find places near you that best suit what you’re looking for. <br> Filter on price, proximity and culinary style to narrow down the options. </h5>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="col s12 m12">
+            
+              <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="mdi-maps-place deep-purple-text"></i>View Results in Map</div>
+      <div class="collapsible-body"><div id="map-canvas"></div></div>
+    </li>
+  </ul>
+            </div>
+            
+            
+            <div class="col s12 m3">
+                <a class="grey-text text-darken-3" href="reviews/review_one.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/reviews1.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Mint Asian Salad Bar</b></h6> 
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="reviews/review_two.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/2ax.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_two.html"><b>Brasil by the Kilo</b></h6>
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="reviews/review_three.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/3a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Bodhi in the Park</b></h6> 
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="col s12 m3">
+                <a class="grey-text text-darken-3" href="reviews/review_four.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/4a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Pure Juice & Soup Bar</b></h6> 
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="reviews/review_five.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/5a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Makanai</b></h6>
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="reviews/review_six.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/6a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Mother Chu’s Vegetarian Kitchen</b></h6> 
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+            <div class="col s12 m3">
+                <a class="grey-text text-darken-3" href="reviews/review_seven.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/7a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Wellbeing</b></h6>
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="reviews/review_eight.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/8a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Garden Park Kitchen</b></h6>
+                        </div>
+
+                    </div>
+                </a>
+                <a class="grey-text text-darken-3" href="/reviews/review_nine.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/9a.png">
+
+                        </div>
+                        <div id="recipecard" class="card-content">
+                            <h6 href="/reviews/review_one.html"><b>Menya Mappen</b></h6>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+            <div class="col s12 m3">
+
+
+                <div class="card">
+                    <div id="recipecard" class="card-content">
+                        <h5><br>Filter</h5>
+                        <br>Location:
+                        <form action="#">
+                         <input placeholder="Enter Suburb or Postcode" id="first_name" type="text" class="validate">
+                        </form>
+                        Distance from Location (Km):
+                        <form action="#">
+                            <p class="range-field">
+                                <input type="range" id="test5" min="0" max="50" />
+                            </p>
+                             Cuisine:<br>
+                            
+                            <br>
+                            <input type="checkbox" class="filled-in" id="filled-in-box1" />
+                            <label for="filled-in-box1" class="grey-text text-darken-3">American</label>
+                            <br>
+                            <input type="checkbox" class="filled-in" id="filled-in-box2" />
+                            <label for="filled-in-box2"  class="grey-text text-darken-3">Japenese</label>
+                            <br>
+
+                            <input type="checkbox" class="filled-in" id="filled-in-box3" />
+                            <label for="filled-in-box3"  class="grey-text text-darken-3">Italian</label>
+                            <br>
+
+                            <input type="checkbox" class="filled-in" id="filled-in-box4" />
+                            <label for="filled-in-box4"  class="grey-text text-darken-3">Thai</label>
+                            <br>
+                               <input type="checkbox" class="filled-in" id="filled-in-box4" />
+                            <label for="filled-in-box4"  class="grey-text text-darken-3">Indian</label>
+                            <br>
+                               <input type="checkbox" class="filled-in" id="filled-in-box4" />
+                            <label for="filled-in-box4"  class="grey-text text-darken-3">Vietnamese</label>
+                            <br>
+                            
+                            
+                              <br>
+                              
+                        </form>
+<a class="waves-effect deep-purple lighten-2 btn right-align"><i class="mdi-action-done left"></i>Apply</a><br><p><br></p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <footer class="page-footer deep-purple lighten-1">
+        <div class="container">
+            <div class="row">
+                  <div class="col l3 s12">
+                    <a href="aboutus.html" class="white-text">ABOUT US & FAQ</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="contactus.html" class="white-text">CONTACT US</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="privacy.html" class="white-text center-align">PRIVACY POLICY</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="sitemap.html" class="white-text">SITE MAP</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Designed by <a class="deep-purple-text text-lighten-3">DBC & CO</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

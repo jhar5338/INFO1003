@@ -1,0 +1,96 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+#customcard {
+padding: 0rem 1.5rem 0rem 1.5rem;
+}
+
+#customheading {
+padding-bottom: 1rem;
+}
+
+.brand-logo {
+font-family: 'Lobster';
+letter-spacing: 3px;
+
+}
+
+d {
+    text-align: left;
+}
+
+#customefont1 {
+    text-align: left;
+}
+
+
+.btn2,
+.btn-large2 {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #9575cd;
+    text-align: left;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+
+.btn2 {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.
+
+.btn2.disabled *,
+.disabled.btn2-large *,
+.btn2-floating.disabled *,
+.btn2-large.disabled *,
+.btn2:disabled *,
+.btn2-large:disabled *,
+.btn2-large:disabled *,
+.btn2-floating:disabled * {
+    pointer-events: none;
+}
+
+.btn2.disabled:hover,
+.disabled.btn2-large:hover,
+.btn2-floating.disabled:hover,
+.btn2-large.disabled:hover,
+.btn2:disabled:hover,
+.btn2-large:disabled:hover,
+.btn2-large:disabled:hover,
+.btn2-floating:disabled:hover {
+    background-color: #DFDFDF;
+    color: #9F9F9F;
+}
+
+.btn2 i,
+.btn2-large i,
+.btn2-floating i,
+.btn2-large i,
+.btn2-flat i {
+    font-size: 1.3rem;
+    line-height: inherit;
+}

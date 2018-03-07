@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>BuzzFood</title>
+
+    <!-- CSS  -->
+        <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" href="/Images/icon.png"/>
+</head>
+<body class="grey lighten-4">
+    <div class="navbar-fixed">
+        <nav class="deep-purple lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" class="brand-logo" href="index.html">
+                    BuzzFood</a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active waves-effect"><a href="index.html">Home</a>
+                    </li>
+                    <li class="waves-effect"><a href="eatin.html">Eat In</a>
+                    </li>
+                    <li class="waves-effect"><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li class="waves-effect"><a href="facts.html">The Facts</a>
+                    </li>
+                    <li class="waves-effect"><a href="tools.html">Tools</a>
+                    </li>
+                    <li class="waves-effect"><a href="play.html">Play</a>
+                    </li>
+                    <li class=" "><a href="#">&nbsp;</a>
+                        <li>
+                            
+
+<button id="bigbutton" data-target="login" class="waves-effect deep-purple lighten-2 btn modal-trigger">Login</button>
+                        </li>
+                    
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li>i<a href="eatin.html">Eat In</a>
+                    </li>
+                    <li><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li><a href="facts.html">The Facts</a>
+                    </li>
+                    <li><a href="tools.html">Tools</a>
+                    </li>
+                    <li><a href="play.html">Play</a>
+                    </li>
+                    <li></li>
+                </ul>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+
+        </nav>
+    </div>
+  <a href="#!" class="waves-effect deep-purple lighten-2 btn"></a>
+  <!-- Login Structure -->
+  <div id="login" class="modal">
+    <div class="modal-content">
+       
+
+
+<h4 class="center-align deep-purple-text text-lighten-1">Login</h4>
+   
+     
+
+   
+        <div class="row">
+    <form method="GET" id="login">
+        <div class="input-field col s12">
+          <input id="username" type="text" class="validate" name="username">
+          <label for="username">Username</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="pass" type="password" class="validate"name="pass">
+          <label for="password">Password</label>
+        </div>
+      </div>
+	  
+	  <button type="submit" name="submitMe" id="submitMe" class=" modal-action modal-close waves-effect deep-purple lighten-2 btn">Login</button>
+    </form>
+         <a data-target="register" class="waves-effect deep-purple-text  btn-flat modal-trigger">Click here to Register</a>
+  </div>
+        
+        
+        
+    </div>
+    
+      <div id="register" class="modal2">
+    <div class="modal-content">
+       <h4 class="center-align deep-purple-text text-lighten-1">Register</h4>
+     
+        
+        <div class="row">
+    <form id="register">
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">First Name</label>
+        </div>
+            <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+         <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Email Address</label>
+        </div>
+          <div class="input-field col s12">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Username</label>
+        </div>
+      </div>
+  
+    </form>
+        
+         <a href="#!" class=" modal-action modal-close waves-effect deep-purple lighten-2 btn">Register</a>
+
+  </div>
+        
+        
+        
+    </div>
+    
+  </div>
+    
+    <div class="container">
+        <div class="row">
+<br>
+            <script type="text/javascript">
+                var cookie = document.cookie;
+                if (cookie.indexOf('visited=', 0) == -1) {
+                    var expiration = new Date();
+                    expiration.setDate(expiration.getDate() + 1);
+                    document.cookie = 'visited=1;expires=' + expiration + ';path=/';
+
+                    var element = document.getElementById('welcome col s12 m12');
+                    element.style.display = 'block';
+                }
+            </script>
+            <div class="hide-on-small-only welcome col s12 m12">
+
+
+
+
+                <div class="card">
+                    <div class="card-content center-align">
+                        <h5 class="deep-purple-text">WELCOME TO BUZZFOOD!<br></h5><h5> Our mission is to stop unhealthy eating at a point where young adults are most impressionable. <br>We aim to provide the basis for a long-term healthy diet by taking the fuss out of food </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m9">
+                <div class="card">
+                    <div id="customcard" class="card-content">
+                        <h4 class="deep-purple-text ">Trending Recipes and Reviews</h4>
+                    </div>
+
+                </div>
+                <a class="grey-text text-darken-3" href="Recipes/recipe_one.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/12.jpg">
+
+                        </div>
+
+
+
+                        <h5 class="grey-text text-darken-4">Broccoli with waldorf salad <a class="modal-trigger" href="#modal1"><h5 class="right right-align"><i class="mdi-action-trending-up deep-purple-text right-align"> 456</i> &nbsp;<i class="mdi-communication-comment deep-purple-text right-align"> 145&nbsp;</i></h5>
+                </a>
+                </h5>
+
+
+                </div>
+                </a>
+                      <a class="grey-text text-darken-3" href="Recipes/recipe_two.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/review_1.png">
+
+                        </div>
+
+
+
+                        <h5 class="grey-text text-darken-4">Bodhi in the Park<a class="modal-trigger" href="#modal1"><h5 class="right right-align"><i class="mdi-action-trending-up deep-purple-text right-align"> 33</i> &nbsp;<i class="mdi-communication-comment deep-purple-text right-align"> 87&nbsp;</i></h5>
+                </a>
+                </h5>
+
+
+                </div>
+                </a>
+                
+                <a class="grey-text text-darken-3" href="Recipes/recipe_two.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/12.jpg">
+
+                        </div>
+
+
+
+                        <h5 class="grey-text text-darken-4">Chargrilled tomato & bean salad with spicy dressing<a class="modal-trigger" href="#modal1"><h5 class="right right-align"><i class="mdi-action-trending-up deep-purple-text right-align"> 233</i> &nbsp;<i class="mdi-communication-comment deep-purple-text right-align"> 83&nbsp;</i></h5>
+                </a>
+                </h5>
+
+
+                </div>
+                </a>
+                <a class="grey-text text-darken-3" href="Recipes/recipe_five.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/recipe_3.jpg">
+
+                        </div>
+
+
+
+                        <h5 class="grey-text text-darken-4">Fruit salad with oats & berry yoghurt<a class="modal-trigger" href="#modal1"><h5 class="right right-align"><i class="mdi-action-trending-up deep-purple-text right-align"> 189</i> &nbsp;<i class="mdi-communication-comment deep-purple-text right-align"> 102&nbsp;</i></h5>
+                </a>
+                </h5>
+
+
+                </div>
+                </a>
+
+
+
+            </div>
+
+            <div class="hide-on-small-only col s12 m3">
+                <div class="card">
+                    <div id="customcard" class="card-content">
+                        <h4 class="deep-purple-text">#BUZZFOOD</h4>
+                        <p id="customheading" class="deep-purple-text">Share your Food Pictures with this hashtag</p>
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/1.png">
+
+                    </div>
+                    <div class="card-content">
+                        <b class="grey-text text-darken-3">@SarahSalmon33</b>
+                        <p>Breakfast is Served! #healthy #letsgetfit #buzzfood</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/3.png">
+
+                    </div>
+                    <div class="card-content">
+                        <b class="grey-text text-darken-3">@Mattthefoodguy</b>
+                        <p>Health lunch feast for four #buzzfood #eathealthy</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/2.png">
+
+                    </div>
+                    <div class="card-content">
+                        <b class="grey-text text-darken-3">@Adelaidebracey</b>
+                        <p>Best way to start the day!! #buzzfood #teenhealth</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="page-footer deep-purple lighten-1">
+        <div class="container">
+            <div class="row">
+                  <div class="col l3 s12">
+                    <a href="aboutus.html" class="white-text">ABOUT US & FAQ</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="contactus.html" class="white-text">CONTACT US</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="privacy.html" class="white-text center-align">PRIVACY POLICY</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="sitemap.html" class="white-text">SITE MAP</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Designed by <a class="deep-purple-text text-lighten-3">DBC & CO</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+	<script src="js/jquery.js"></script>
+	<script src="js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+    <script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+
+</html>
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>BuzzFood</title>
+
+    <!-- CSS  -->
+     <link href="css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="grey lighten-4">
+ <div class="navbar-fixed">
+        <nav class="deep-purple lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" class="brand-logo" href="index.html">
+                    BuzzFood</a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="waves-effect"><a href="index.html">Home</a>
+                    </li>
+                    <li class="waves-effect"><a href="eatin.html">Eat In</a>
+                    </li>
+                    <li class="waves-effect"><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li class="waves-effect"><a href="facts.html">The Facts</a>
+                    </li>
+                    <li class="active waves-effect"><a href="tools.html">Tools</a>
+                    </li>
+                    <li class="waves-effect"><a href="play.html">Play</a>
+                    </li>
+                    <li class=" "><a href="#">&nbsp;</a>
+                        <li>
+                            <a data-target="login" class="waves-effect deep-purple lighten-2 btn modal-trigger">Login</a>
+                        </li>
+                    
+                </ul>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li class="active"><a href="index.html">Home</a>
+                    </li>
+                    <li>i<a href="eatin.html">Eat In</a>
+                    </li>
+                    <li><a href="eatout.html">Eat Out</a>
+                    </li>
+                    <li><a href="facts.html">The Facts</a>
+                    </li>
+                    <li><a href="tools.html">Tools</a>
+                    </li>
+                    <li><a href="play.html">Play</a>
+                    </li>
+                    <li></li>
+                </ul>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+
+        </nav>
+    </div>
+ <a href="index.html" class="waves-effect deep-purple lighten-2 btn2 left-align"> <div class="container"><d id="customfont1" class="left-align">Home > Tools</d></div></a>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+             
+
+              <div class="card">
+            
+            <div class="card-content">
+                   <h4 class="deep-purple-text">BMI Calulator </h4>
+              <p>
+<FORM NAME="BMI" method=POST>
+<TABLE border=1>
+<TR>
+<TD><DIV ALIGN=CENTER>Your Weight (kg)</DIV></TD>
+<TD><DIV ALIGN=CENTER>Your Height (cm)</DIV></TD>
+<TD><DIV ALIGN=CENTER>Your BMI</DIV></TD>
+<TD><DIV ALIGN=CENTER>Analysis</DIV></TD>
+</TR>
+
+<TR>
+<TD><INPUT TYPE=TEXT NAME=weight SIZE=10 value="Please Enter Your Weight" onfocus="if (this.value=='Please Enter Your Weight') this.value='';" onFocus="this.form.weight.value=''"></TD>
+<TD><INPUT TYPE=TEXT NAME=height  SIZE=10 value="Please Enter Your Height" onfocus="if (this.value=='Please Enter Your Height') this.value='';" onFocus="this.form.height.value=''"></TD>
+<TD><INPUT TYPE=TEXT NAME=bmi     SIZE=8 ></TD>
+<TD><INPUT TYPE=TEXT NAME=my_comment size=35></TD>
+</TABLE>
+
+<P>
+<button TYPE="button" VALUE="Calculate" class="btn waves-effect waves-light deep-purple lighten-2" onClick="computeform(this.form)">Calulate </button>
+<button TYPE="reset" VALUE="Reset" class="btn waves-effect waves-light deep-purple lighten-2" onClick="ClearForm(this.form)">Reset </button>
+
+    
+</FORM>
+
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+<!-- hide this script tag's contents from old browsers
+
+//Body Mass calculator- by John Scott (johnscott03@yahoo.com)
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function ClearForm(form){
+
+    form.weight.value = "";
+    form.height.value = "";
+    form.bmi.value = "";
+    form.my_comment.value = "";
+
+}
+
+function bmi(weight, height) {
+
+          bmindx=weight/eval(height*height);
+          return bmindx;
+}
+
+function checkform(form) {
+
+       if (form.weight.value==null||form.weight.value.length==0 || form.height.value==null||form.height.value.length==0){
+            alert("\nPlease complete the form first");
+            return false;
+       }
+
+       else if (parseFloat(form.height.value) <= 0||
+                parseFloat(form.height.value) >=500||
+                parseFloat(form.weight.value) <= 0||
+                parseFloat(form.weight.value) >=500){
+                alert("\nReally know what you're doing? \nPlease enter values again. \nWeight in kilos and \nheight in cm");
+                ClearForm(form);
+                return false;
+       }
+       return true;
+
+}
+
+function computeform(form) {
+
+       if (checkform(form)) {
+
+       yourbmi=Math.round(bmi(form.weight.value, form.height.value/100));
+       form.bmi.value=yourbmi;
+
+       if (yourbmi >40) {
+          form.my_comment.value="You are grossly obese, consult your physician!";
+       }
+
+       else if (yourbmi >30 && yourbmi <=40) {
+          form.my_comment.value="Umm... You are obese, want some liposuction?";
+       }
+
+       else if (yourbmi >27 && yourbmi <=30) {
+          form.my_comment.value="You are very fat, do something before it's too late";
+       }
+
+       else if (yourbmi >22 && yourbmi <=27) {
+          form.my_comment.value="You are fat, need dieting and exercise";
+       }
+
+       else if (yourbmi >=21 && yourbmi <=22) {
+          form.my_comment.value="I envy you. Keep it up!!";
+       }
+
+       else if (yourbmi >=18 && yourbmi <21) {
+          form.my_comment.value="You are thin, eat more.";
+       }
+
+       else if (yourbmi >=16 && yourbmi <18) {
+          form.my_comment.value="You are starving. Go Find some food!";
+       }
+
+       else if (yourbmi <16) {
+          form.my_comment.value="You're grossly undernourished, need hospitalization ";
+       }
+
+       }
+       return;
+}
+ // -- done hiding from old browsers -->
+</SCRIPT></p>
+            </div>
+          </div>
+              
+            </div>
+
+           
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="page-footer deep-purple lighten-1">
+        <div class="container">
+            <div class="row">
+                  <div class="col l3 s12">
+                    <a href="aboutus.html" class="white-text">ABOUT US & FAQ</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="contactus.html" class="white-text">CONTACT US</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="privacy.html" class="white-text center-align">PRIVACY POLICY</a>
+
+                </div>
+                <div class="col l3 s12">
+                    <a href="sitemap.html" class="white-text">SITE MAP</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Designed by <a class="deep-purple-text text-lighten-3">DBC & CO</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
